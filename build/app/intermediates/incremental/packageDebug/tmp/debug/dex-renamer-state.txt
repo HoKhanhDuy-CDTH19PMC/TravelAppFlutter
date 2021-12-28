@@ -1,0 +1,4 @@
+#Tue Dec 21 23:02:49 ICT 2021
+base.0=D\:\\CODE-HK5\\LT_ANDROID\\DOAN\\Login-Signup-Ui-FLutter-master\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
