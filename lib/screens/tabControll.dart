@@ -51,7 +51,7 @@ return Container(
         icon: Icon(Icons.home)
       ),
       Tab(
-        text: "Bills",
+        text: "NEWS",
         icon: Icon(Icons.assignment),
       ),
       Tab(

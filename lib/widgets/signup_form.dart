@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:login_signup_ui_starter/theme.dart';
+import 'package:login_signup_ui_starter/widgets/primary_button.dart';
+
+import 'checkbox.dart';
 
 class SignUpForm extends StatefulWidget {
   @override
@@ -18,6 +21,27 @@ class _SignUpFormState extends State<SignUpForm> {
         buildInputForm('Phone', false),
         buildInputForm('Password', true),
         buildInputForm('Confirm Password', true),
+               SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: kDefaultPadding,
+              child: CheckBox('Agree to terms and conditions.'),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: kDefaultPadding,
+              child: CheckBox('I have at least 18 years old.'),
+            ),
+             SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: kDefaultPadding,
+              child: PrimaryButton(buttonText: 'Sign Up'),
+            ),
       ],
     );
   }

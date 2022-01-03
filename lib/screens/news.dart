@@ -20,7 +20,11 @@ class News extends StatelessWidget {
         children: <Widget>[
           CircleAvatar(
             radius: 16,
-              backgroundImage : AssetImage('assets/sample/ic_avatar_1.jpg')
+              backgroundImage :   NetworkImage(
+               
+                 "https://nichetravel.com.vn/wp-content/uploads/2020/08/travel-world.jpg",
+            
+                  ),
           ),
           Expanded(
             child: Padding(

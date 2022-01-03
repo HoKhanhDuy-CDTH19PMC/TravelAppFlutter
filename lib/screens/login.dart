@@ -7,6 +7,9 @@ import 'package:login_signup_ui_starter/widgets/login_form.dart';
 import 'package:login_signup_ui_starter/widgets/login_option.dart';
 import 'package:login_signup_ui_starter/widgets/primary_button.dart';
 import 'homePage.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
 class LogInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -80,21 +83,13 @@ class LogInScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 20,
-              ),
+              // SizedBox(
+              //   height: 20,
+              // ),
               // PrimaryButton(
               //   buttonText: 'Log In',
                 
-                 GestureDetector(
-                   onTap: (){
-                       Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => AllTabControll()));
-                   },
-                   child: PrimaryButton(buttonText: 'Đăng nhập',),
-                 ),
+           
               // ),
               SizedBox(
                 height: 20,

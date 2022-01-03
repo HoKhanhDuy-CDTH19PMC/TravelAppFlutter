@@ -63,27 +63,27 @@ class SignUpScreen extends StatelessWidget {
               padding: kDefaultPadding,
               child: SignUpForm(),
             ),
-            SizedBox(
-              height: 20,
-            ),
-            Padding(
-              padding: kDefaultPadding,
-              child: CheckBox('Agree to terms and conditions.'),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Padding(
-              padding: kDefaultPadding,
-              child: CheckBox('I have at least 18 years old.'),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Padding(
-              padding: kDefaultPadding,
-              child: PrimaryButton(buttonText: 'Sign Up'),
-            ),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Padding(
+            //   padding: kDefaultPadding,
+            //   child: CheckBox('Agree to terms and conditions.'),
+            // ),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Padding(
+            //   padding: kDefaultPadding,
+            //   child: CheckBox('I have at least 18 years old.'),
+            // ),
+            // SizedBox(
+            //   height: 20,
+            // ),
+            // Padding(
+            //   padding: kDefaultPadding,
+            //   child: PrimaryButton(buttonText: 'Sign Up1'),
+            // ),
             SizedBox(
               height: 20,
             ),

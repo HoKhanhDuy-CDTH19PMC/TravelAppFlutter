@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">603021236481-t3b1djsf91s7nkd8f0vu1q4bsh0179et.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">603021236481</string>
+    <string name="google_api_key" translatable="false">AIzaSyATZv2Sfnmai9gJ3DcRGlCa3iv2MfFvv0o</string>
+    <string name="google_app_id" translatable="false">1:603021236481:android:64186639766231b174e300</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyATZv2Sfnmai9gJ3DcRGlCa3iv2MfFvv0o</string>
+    <string name="google_storage_bucket" translatable="false">doan-be940.appspot.com</string>
+    <string name="project_id" translatable="false">doan-be940</string>
+</resources>
