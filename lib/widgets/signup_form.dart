@@ -38,10 +38,21 @@ class _SignUpFormState extends State<SignUpForm> {
              SizedBox(
               height: 20,
             ),
-            Padding(
-              padding: kDefaultPadding,
-              child: PrimaryButton(buttonText: 'Sign Up'),
-            ),
+                GestureDetector(
+                   onTap: (){
+                                         
+
+                      //  Navigator.push(
+                      // context,
+                      // MaterialPageRoute(
+                      //     builder: (context) => AllTabControll()));
+                   },
+                   child: PrimaryButton(buttonText: 'Đăng ký',),
+                 ),
+            // Padding(
+            //   padding: kDefaultPadding,
+            //   child: PrimaryButton(buttonText: 'Sign Up'),
+            // ),
       ],
     );
   }
