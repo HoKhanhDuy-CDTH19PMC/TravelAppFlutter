@@ -35,7 +35,7 @@ class _SignUpFormState extends State<SignUpForm> {
         buildInputFormEmail('Email', false),
         buildInputFormPhone('Phone', false),
         buildInputFormPassword('Password', true),
-        buildInputFormConfirm('Confirm Password', true),
+        // buildInputFormConfirm('Confirm Password', true),
                SizedBox(
               height: 20,
             ),
@@ -259,7 +259,15 @@ class _SignUpFormState extends State<SignUpForm> {
     return Padding(
         padding: EdgeInsets.symmetric(vertical: 5),
         child: TextFormField(
+                  
            controller: confirm,
+              validator: (value) {
+                       if(password!=confirm){
+                         return "Xác nhận mật khẩu sai!"; 
+                       }
+                       return null;
+                
+                     },
           obscureText: pass ? _isObscure : false,
           decoration: InputDecoration(
             hintText: hint,

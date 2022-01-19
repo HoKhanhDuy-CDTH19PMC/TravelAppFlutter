@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Tuan Ruong\\Downloads\\doanflutter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-uk\\values-uk.xml",
+            "outputFile": "D:\\DOwload\\doanflutter\\doanflutter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-uk\\values-uk.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Tuan Ruong\\.gradle\\caches\\transforms-2\\files-2.1\\8caf69ec265aca8ea5a25ec57bbd8692\\core-1.2.0\\res\\values-uk\\values-uk.xml",
+                    "source": "C:\\Users\\ACER\\.gradle\\caches\\transforms-2\\files-2.1\\8caf69ec265aca8ea5a25ec57bbd8692\\core-1.2.0\\res\\values-uk\\values-uk.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Tuan Ruong\\.gradle\\caches\\transforms-2\\files-2.1\\4f1f09bd4ba5fbc6b6748842e6afc4b9\\jetified-play-services-basement-18.0.0\\res\\values-uk\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "141",
-                        "endOffsets": "336"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1274",
-                        "endColumns": "145",
-                        "endOffsets": "1415"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Tuan Ruong\\.gradle\\caches\\transforms-2\\files-2.1\\0cd0c95cf645f00d921c59b7970ea12e\\jetified-play-services-base-17.1.0\\res\\values-uk\\values.xml",
+                    "source": "C:\\Users\\ACER\\.gradle\\caches\\transforms-2\\files-2.1\\0cd0c95cf645f00d921c59b7970ea12e\\jetified-play-services-base-17.1.0\\res\\values-uk\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -52,6 +35,23 @@
                         "startOffsets": "105,215,410,539,651,864,995,1140,1420,1647,1755,1948,2075,2281,2453,2553,2644",
                         "endColumns": "109,194,128,111,212,130,144,133,226,107,192,126,205,171,99,90,116",
                         "endOffsets": "210,405,534,646,859,990,1135,1269,1642,1750,1943,2070,2276,2448,2548,2639,2756"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ACER\\.gradle\\caches\\transforms-2\\files-2.1\\4f1f09bd4ba5fbc6b6748842e6afc4b9\\jetified-play-services-basement-18.0.0\\res\\values-uk\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "141",
+                        "endOffsets": "336"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1274",
+                        "endColumns": "145",
+                        "endOffsets": "1415"
                     }
                 }
             ]

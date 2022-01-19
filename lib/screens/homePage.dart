@@ -1,6 +1,10 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
+
+import '../api.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -8,8 +12,37 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePage extends State<HomePage> {
+     Iterable ds = [];
+  bool isUpdate = true;
+
   @override
   Widget build(BuildContext context) {
+     Widget detailsSite(int index){
+  return Center(
+
+  child: ListView(children: [
+
+    
+      Image.network(
+                ds.elementAt(index)["img"].toString(),
+                fit: BoxFit.cover,
+                
+              ),
+ Text(ds.elementAt(index)["location"].toString(),style:TextStyle(fontSize: 17,color: Colors.cyan)),
+
+  
+  ],),
+  );
+}
+    if (isUpdate == true) {
+      API(url: "http://10.0.2.2:8000/api/danh-sach-dia-danh")
+          .getDataString()
+          .then((value) {
+        ds = json.decode(value);
+        isUpdate = false;
+        setState(() {});
+      });
+    }
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -129,27 +162,43 @@ class _HomePage extends State<HomePage> {
     margin: EdgeInsets.fromLTRB(0, 180, 0, 0),
 child: GridView.count(
         crossAxisCount: 2,
-        children: new List<Widget>.generate(4, (index) {
+        children: new List<Widget>.generate(ds.length, (index) {
           return new GridTile(
             child: new Card(
+              
               child:  Center(
                 child:Column(
 children: [
-  Container(
+InkWell(
+  child:   Container(
   
                  width: 180,
                height: 150,
                   padding:EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: Image.network(
-                "https://cdn.kibrispdr.org/data/gambar-orang-traveling-0.jpg",
+                ds.elementAt(index)["img"].toString(),
                 fit: BoxFit.cover,
                 
               ),
               
                 ),
+                onTap: (){
+                      Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        detailsSite(index),
+                  ),
+                );
+                },
+),
                  Container(
                    margin:EdgeInsets.fromLTRB(0, 10, 0, 0),
-                   child:Text("Địa danh đang hot",style:TextStyle(fontSize: 17,color: Colors.cyan)),
+                   child:Column(children: [
+                Text(ds.elementAt(index)["name"].toString(),style:TextStyle(fontSize: 17,color: Colors.cyan)),
+                Text(ds.elementAt(index)["description"].toString(),style:TextStyle(fontSize: 13,color: Colors.black54)),
+                   ],)
+                  
                  )
                 ],
                 )
